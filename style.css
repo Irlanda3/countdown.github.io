@@ -1,0 +1,53 @@
+
+*  /* on esto el header nav bar se acomoda bien*/
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+header .navbar
+{
+    position: fixed;/*con este la foto y el header navbar fit*/
+    background: rgba(5, 130, 172, 0.856); /*background: var(--black);*/
+    padding: 1rem 7%
+
+}
+header .navbar h1
+{
+    font-size: 3rem;
+    color: rgb(1, 18, 36);
+    /*padding: .5rem 14.5rem; /*center*/
+    
+}
+.container 
+{
+    
+    width: 100;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(kieran.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container .big-text
+{
+    font-size: 6rem;
+    color:aliceblue;
+    margin: 0 2rem;/* los cerros tienen espacio entre si*/
+    line-height: 1;
+    
+} 
+.container span
+{
+    color: white;
+    text-align: center;
+}
+.container .countdownwrap/*to center days hrs mins ans sec under the number*/
+{
+    text-align: center;
+}
