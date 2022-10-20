@@ -29,7 +29,8 @@ header .navbar h1
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(kieran.jpeg);
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: flex;/*este es parte para que en media queries sea columns*/
+    flex-direction: row;/*you can change the flex-direction from row to column*/
     align-items: center;
     justify-content: center;
     
@@ -50,4 +51,27 @@ header .navbar h1
 .container .countdownwrap/*to center days hrs mins ans sec under the number*/
 {
     text-align: center;
+}
+
+@media (max-width: 468px){
+    .header .navbar h1{
+        font-size: 11px;
+        text-align: center;
+        font-weight:700;
+    }
+    .container{
+        flex-direction: column; /*esto y con el  flex de arriba es com se modifica en columns*/
+    }
+    .container .countdownwrap{
+       
+        font-size: 22px;/*cambia los mins secs  a mas chikitos*/
+        
+        
+    }
+    .container .countdownwrap .big-text{
+        font-size: 50px; /*cambia los numeros*/ 
+        
+    }
+
+    
 }

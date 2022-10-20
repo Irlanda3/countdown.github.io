@@ -24,7 +24,7 @@ const contador = setInterval( function() {
         console.log("Integet days: ", intDays);
 
         // Decimal Days => hrs 
-        const decimalHrs = decimalDays * 24;//0.5523569560185138 -
+        const decimalHrs = decimalDays * 24;//0.5523569560185138 - anothernumber
         console.log("decimalHrs: ",decimalHrs);
         const intHrs = Math.floor(decimalHrs);
         console.log("integer hrs: ", intHrs);
@@ -54,4 +54,4 @@ const contador = setInterval( function() {
 
 }, 1000); // the 1000 is to update the info every second
 
-contador();
+
