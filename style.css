@@ -54,25 +54,43 @@ header .navbar h1
 }
 
 @media (max-width: 468px){
-    header h1{
-        font-size: 11px;
+    header .navbar h1{
+        font-size: 9rem;
         text-align: center;
-        font-weight:700;
+        font-weight:100;
         font-family: fantasy;
+        padding-top:3rem;
     }
     .container{
         flex-direction: column; /*esto y con el  flex de arriba es com se modifica en columns*/
     }
     .container .countdownwrap{
-       
+        padding: 0;
         font-size: 22px;/*cambia los mins secs  a mas chikitos*/
-        
+        margin-bottom:1rem;
         
     }
     .container .countdownwrap .big-text{
-        font-size: 50px; /*cambia los numeros*/ 
+        font-size: 40px; /*cambia los numeros*/ 
+        margin: 20px;
+        
+    } 
+}
+@media (max-width: 414px){
+    header .navbar h1{
+        font-size: 39px;
+        margin-top:0;
         
     }
-
-    
+    header .navbar{
+        position: relative;
+    }
+    .container .countdownwrap{
+        
+    }
+    .container .countdownwrap .big-text{
+        font-size: 40px; /*cambia los numeros*/ 
+        
+        
+    }
 }

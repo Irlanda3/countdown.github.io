@@ -3,13 +3,14 @@ const contador = setInterval( function() {
         const christmasday = "25 December 2022";
         const christmasdayDate = new Date(christmasday);
         const currentDate = new Date();
+        console.log(christmasdayDate);
 
-        // A difference if 2 dates in miliseconds
-        const daysToChristmas = christmasdayDate - currentDate;
+        // A difference of 2 dates in miliseconds
+        const sec = (christmasdayDate - currentDate)/1000;
+        console.log("how many seconds until Navidad: ", sec);
 
-        // Goal convert miliseconds to days because our answers is in miliseconds
-        const sec = daysToChristmas / 1000;
-        console.log("seconds: ", sec);
+        // Goal convert seconds to days because our answers is in miliseconds
+       
         const min = sec / 60;
         console.log("minutes: ", min);
         const hrs = min / 60;
@@ -21,10 +22,10 @@ const contador = setInterval( function() {
         const decimalDays = days - Math.trunc(days);
         console.log("decimal Days: ", decimalDays); // We get the decimal part
         const intDays = Math.floor(days);
-        console.log("Integet days: ", intDays);
+        console.log("Integer days: ", intDays);
 
         // Decimal Days => hrs 
-        const decimalHrs = decimalDays * 24;//0.5523569560185138 - anothernumber
+        const decimalHrs = (decimalDays * 24) - 1;//0.5523569560185138 - anothernumber
         console.log("decimalHrs: ",decimalHrs);
         const intHrs = Math.floor(decimalHrs);
         console.log("integer hrs: ", intHrs);
