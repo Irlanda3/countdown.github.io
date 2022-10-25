@@ -25,7 +25,7 @@ const contador = setInterval( function() {
         console.log("Integer days: ", intDays);
 
         // Decimal Days => hrs 
-        const decimalHrs = (decimalDays * 24) - 1;//0.5523569560185138 - anothernumber
+        const decimalHrs = (decimalDays * 24)-1;//
         console.log("decimalHrs: ",decimalHrs);
         const intHrs = Math.floor(decimalHrs);
         console.log("integer hrs: ", intHrs);
